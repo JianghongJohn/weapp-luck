@@ -1,0 +1,23 @@
+
+<view id="{{action}}">
+    <article class="back" style='background-image:url({{back_url}});'></article>
+    <article class="middle" style="transform: translateZ(1px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(2px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(3px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(4px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(5px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(6px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(7px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(8px);background-image:url({{back_url}})"></article>
+    <article class="middle" style="transform: translateZ(9px);background-image:url({{back_url}})"></article>
+    <article class="front" style='background-image:url({{front_url}});'></article>
+</view>
+<image hidden='{{isHidden}}' style="transform: translateZ(11px)" class='resultImage' src='{{imageUrl}}'></image>
+<view class='bottom-view'>
+<label class='result-text'>抛掷结果：{{throwList}}</label>
+<label class='tip-text'>正面为：{{coin.front_title}}  反面为：{{coin.back_title}}</label>
+<button class='actionBtn' bindtap='{{btnActionName}}'>{{butonTitle}}</button>
+</view>
+<!-- <image wx:if='{{isAnalyse}}' class = 'add-icon' bindtap='getAnalyse' src='../../Image/analyse.png'></image> -->
+<!-- <button open-type="share" style='left:60rpx;top:60rpx;position:fixed;background-color:#f3f3f3;color:#323232'>转</button> -->
+

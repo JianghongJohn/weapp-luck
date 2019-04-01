@@ -1,0 +1,12 @@
+<form bindsubmit="formSubmit">
+  <input class='input-view' name="title" style='width:400rpx' placeholder-style='text-align: center;' value='{{formData.title}}' placeholder='请输入幸运币标题'></input>
+  <view class='picture-view'>
+    <image class='picture' bindtap='selectFront' src="{{front_url}}"></image>
+    <input class='input-view' value='{{formData.front_title}}' name="front_title" placeholder-style='text-align: center;' placeholder='请输入正面标题'></input>
+  </view>
+  <view class='picture-view'>
+    <image class='picture' bindtap='selectBack' src="{{back_url}}"></image>
+    <input class='input-view' value='{{formData.back_title}}' name="back_title" placeholder-style='text-align: center;' placeholder='请输入反面标题'></input>
+  </view>
+  <button style='margin-left:50rpx;margin-right:50rpx;top:50rpx;color:#323232' form-type="submit">{{buttonTitle}}</button>
+</form>

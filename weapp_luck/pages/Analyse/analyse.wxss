@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+.item-view{
+  width: 100%;
+  height: 60rpx;
+  border-bottom-color: #ead99f;
+  border-bottom-style: solid;
+  border-bottom-width:1rpx;
+  display: flex;
+  flex-direction: row; 
+}
+.item-view-header{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 10rpx;
+  border-bottom-color: #ead99f;
+  border-bottom-style: solid;
+  border-bottom-width:1rpx;
+  display: flex;
+  flex-direction: row; 
+  background-color: #A72126;
+}
+.header-view{
+  text-align:center;
+  font-size:40rpx;
+  line-height: 80rpx;
+  color:#fff;
+  width: 50%;
+}
+.data-view{
+  text-align:center;
+  font-size:30rpx;
+  line-height: 60rpx;
+  color:#323232;
+  width: 50%;
+  border-right-color:#ead99f;
+  border-right-style:solid;
+  border-right-width:1rpx;
+
+}

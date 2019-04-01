@@ -1,0 +1,29 @@
+<view class='container'>
+<image class='wellcome' src='{{wellComeUrl}}' mode='aspectFit'>
+  </image>
+<scroll-view style='height:{{scrollHeight}}rpx;margin-top:9%;' scroll-y>
+<view class='list-view'>
+  <label wx:if = '{{dataList.length==0}}' style='text-align:center'>您没有幸运币哦，点击底部可以新增哦^_^~</label>
+  <block wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class='item-view' data-index="{{idx}}" bindtap='throwCoin'>
+    <image src='../../Image/coin_list_view.png' class='list-image' mode='aspectFit'></image>
+      <view class='left-view'>
+        <text style='color:#323232;font-size:26rpx;text-align:center;'>{{item.front_title?item.title:'未获取到标题'}}</text>
+        <view class='bottom-view'>
+          <view class='picture-view'>
+            <image class='picture' src="{{url}}{{item.front_url}}"></image>
+            <text style='color:#323232;font-size:24rpx;text-align:center;'>{{item.front_title?item.front_title:'未获取到'}}</text>
+          </view>
+          <view class='picture-view'>
+            <image class='picture' src="{{url}}{{item.back_url}}"></image>
+            <text style='color:#323232;font-size:24rpx;text-align:center;'>{{item.front_title?item.back_title:'未获取到'}}</text>
+          </view>
+        </view>
+      </view>
+      <image class='edit-icon' src='../../Image/edit.png' catchtap='editCoin' data-idx='{{idx}}' mode='aspectFit'></image>
+    </view>
+  </block>
+</view>
+</scroll-view>
+<image class = 'add-icon' bindtap='addCoin' src='../../Image/add.png'></image>
+</view>

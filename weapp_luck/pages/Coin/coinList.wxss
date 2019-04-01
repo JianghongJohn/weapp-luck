@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+.wellcome {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #FBF5F2
+}
+
+.list-view{
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.item-view{
+  margin-top: 0rpx;
+  /* background-color: #f3f3f3; */
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  /* padding: 20rpx 20rpx; */
+  position: relative;
+  height: 310rpx;
+}
+.list-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.left-view{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  z-index: 1;
+  margin-top: 61rpx;
+}
+.bottom-view{
+  display: flex;
+  flex-direction: row;
+  margin-top:15rpx;
+}
+.picture-view{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.picture{
+  width:110rpx;
+  height:110rpx;
+  border-radius: 50%;
+  background-color: #545454;
+  margin-top:10rpx;
+  margin-right:auto;
+  margin-left:auto;
+  border-color: #ead99f;
+  border-width: 4rpx;
+  border-style: solid;
+}
+
+.edit-icon{
+  width:60rpx;
+  height:60rpx; 
+  position:absolute;
+  bottom:15rpx;
+  right:15rpx;
+  z-index:1
+}
+
+.add-icon{
+  bottom:60rpx;
+right:60rpx;
+width:80rpx;
+height:80rpx;
+position:absolute;
+left:50%;
+margin-left:-40rpx;
+}

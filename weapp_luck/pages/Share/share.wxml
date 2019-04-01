@@ -1,0 +1,3 @@
+<!--pages/Share/share.wxml-->
+
+<canvas canvas-id="shareCanvas" style="width:220px;height:400rpx;margin-left:auto;margin-right:auto;margin-top:20rpx"></canvas> 

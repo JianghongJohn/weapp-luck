@@ -1,0 +1,16 @@
+<!--logs.wxml-->
+<view class='container'>
+<text style='text-align:center;font-size:30rpx;color:#323232'>幸运币({{coin.title}}),正面({{coin.front_title}}),反面({{coin.back_title}})</text>
+  <text style='text-align:center;font-size:30rpx;color:#323232'>您总共抛了{{totalCount}}次，{{frontCount}}次正面，{{backCount}}次反面</text>
+  <view class='item-view-header'>
+    <text class='header-view'>时间</text>
+    <text class='header-view'>结果</text>
+  </view>
+  <block wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class='item-view'>
+    <text class='data-view' style='font-size:30rpx;border-left-color:#ead99f;border-left-style:solid;border-left-width:1rpx;'>{{item.time}}</text>
+    <text class='data-view'>{{item.isFront?'正面':'反面'}}</text>
+
+    </view>
+  </block>
+</view>

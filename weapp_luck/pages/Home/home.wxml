@@ -1,0 +1,19 @@
+<view class='container'>
+  <image class='wellcome' src='{{wellComeUrl}}' mode='aspectFit'>
+  </image>
+  <view class='userinfo'>
+    <image class='icon-image' src='{{iconUrl}}'></image>
+    <text class='nickName'>{{nickName}}</text>
+  </view>
+  <button wx:if='{{isAuthor}}' hover-class="none" class='author-btn' style='position:absolute;top:82%;width:50%;left:25%;margin-top:-75rpx;' bindtap='enterApp'>
+  <image class='entrance-image' src='../../Image/wellcome_entrance.png' mode='aspectFit'></image>
+  </button>
+  <view class='entrance-view' wx:else >
+  <!-- 需要使用 button 来授权登录 -->
+  <button wx:if="{{canIUse}}" class='author-btn' hover-class="none" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >
+    <image class='entrance-image' src='../../Image/wellcome_entrance.png' mode='aspectFit'></image>
+  </button>
+  <view wx:else>请升级微信版本</view>
+  </view>
+  
+</view>
